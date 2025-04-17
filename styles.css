@@ -1,0 +1,391 @@
+:root {
+    --cor-cinza: #667085;
+    --cor-vermelha: #8E2424;
+    --cor-cinza-escuro: #101828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--cor-cinza);
+    margin-right: 2rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+
+button#signUp {
+    background-color: var(--cor-vermelha);
+    color: #FFF;
+}
+
+.cabecalho__menu-hamburguer {
+    background-image: url("assets/menu.svg");
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container {
+    padding: 3% 0;
+    
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-vermelha);
+    border-radius: 16px;
+    list-style-type: none;
+    right: 2%;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__item {
+    padding: 1em;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor--primaria);
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
+
+
+
+/* ------- HEADER --------- */
+
+.about-us {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.about-us span {
+    font-size: 16px;
+    color: var(--cor-vermelha);
+}
+
+.about-us h1 {
+    font-size: 48px;
+    color: var(--cor-cinza-escuro);
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 20px;
+    color: var(--cor-cinza);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0 15rem;
+}
+
+/* ----------- METRICS ----------- */
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    padding: 0 8rem;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metric h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-vermelha);
+}
+
+.metric h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-cinza-escuro);
+}
+
+.metric p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    line-height: 140%;
+}
+
+/* ----------- TALENTS -------------- */
+
+.talents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5rem;
+    padding-top: 6rem;
+    gap: 1rem;
+}
+
+.talents span {
+    font-size: 14px;
+    color: var(--cor-vermelha);
+    background-color: #8E24240D;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.talents h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-cinza-escuro);
+    text-align: center;
+}
+
+.talents p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    text-align: center;
+}
+
+.talents img {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* ---------- VAGAS ----------- */
+
+.vagas {
+    padding-top: 4rem;
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 1px solid #EAECF0;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.vaga-descricao {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.vagas h3 {
+    display: block;
+    max-width: 50%;
+    margin: 2rem auto;
+    font-size: 20px;
+    color: var(--cor-cinza-escuro);
+}
+
+.vaga h4 {
+    font-size: 18px;
+    color: var(--cor-cinza-escuro);
+}
+
+.vaga-descricao span {
+    font-size: 16px;
+    color: var(--cor-cinza);
+}
+
+/* --------------- DEPOIMENTO ------------ */
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C3191908;
+    margin: 6rem 7rem;
+    padding: 4rem 4rem;
+}
+
+.depoimento span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-vermelha);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.depoimento h2 {
+    font-size: 36px;
+    color: var(--cor-cinza-escuro);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.depoimento img{
+    width: 48px;
+    margin-bottom: 1rem;
+}
+
+.depoimento span.nome {
+    font-size: 16px;
+    color: var(--cor-cinza-escuro);
+    margin-bottom: 0.25rem;
+}
+
+.depoimento span.cargo {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+}
+
+/* ---------- RODAPÉ ---------- */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAFB;
+    padding: 6rem 0;
+}
+
+.rodape h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-cinza-escuro);
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.rodape p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.cadastro-email {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.email {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.cadastrar-email {
+    background-color: var(--cor-vermelha);
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0.75rem 1.25rem;
+}
+
+.rodape span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-cinza);
+    text-align: center;
+}
+
+/* -------- RESPONSIVIDADE --------- */
+
+@media screen and (max-width: 920px) {
+    .metrics {
+        margin: 0 2rem;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-us p {
+        padding: 0 3rem;
+    }
+
+    .metrics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .metric {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .talents {
+        margin: 0 1rem;
+    }
+
+    .vaga {
+        max-width: 70%;
+    }
+    
+    .vagas h3{
+        max-width: 70%;
+    }
+
+    .depoimento {
+        margin: 6rem 3rem;
+        padding: 4rem 2rem;
+    }
+    .depoimento h2 {
+        font-size: 22px;
+    }
+
+    .links {
+        display: none;
+    }
+}

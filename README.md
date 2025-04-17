@@ -1,0 +1,1 @@
+Página destinada a novas contratações.
